@@ -40,11 +40,11 @@ y_pred = model.predict(X_test)
 
 ## An example for Neural Networks optimized with Genetic Algorithm
 ```python
-from nn.genetic_algorithm.layers import GAInput, GADense, GAOutput
-from nn.genetic_algorithm.model import GAModel, GASequentialModel
+from lnn.genetic_algorithm.layers import GAInput, GADense, GAOutput
+from lnn.genetic_algorithm.model import GAModel, GASequentialModel
 
 # Create the model
-model=GAModel(population=500)
+model = GAModel(population=500)
 
 # Add input layer to the model
 model.add(GAInput(32))
